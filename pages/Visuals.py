@@ -62,7 +62,7 @@ pie = px.pie(
     csv_df,
     names="Category",
     title="Survey Results: Favorite PGA Tour Golfer"
-)   
+)
 st.plotly_chart(pie)
 
 st.header("Average Rounds per Month by Favorite Golfer")
@@ -79,3 +79,22 @@ filtered_csv = csv_df[csv_df["Category"].isin(st.session_state.picked_golfers)]
 
 avg_rounds = filtered_csv.groupby("Category")["Value"].mean()
 st.bar_chart(avg_rounds)
+
+if len(filtered_csv) > 0:
+    current_mean = round(filtered_csv["Value"].mean(), 2)
+    current_median = round(filtered_csv["Value"].median(), 2)
+
+    if "prev_mean" not in st.session_state:
+        st.session_state.prev_mean = current_mean
+        st.session_state.prev_median = current_median
+
+    mean_change = round(current_mean - st.session_state.prev_mean, 2)
+    median_change = round(current_median - st.session_state.prev_median, 2)
+
+    st.metric(label="Mean rounds per month", value=current_mean, delta=mean_change)
+    st.metric(label="Median rounds per month", value=current_median, delta=median_change)
+
+    st.session_state.prev_mean = current_mean
+    st.session_state.prev_median = current_median
+else:
+    st.write("Select at least one golfer to see the statistics.")
