@@ -62,7 +62,7 @@ pie = px.pie(
     csv_df,
     names="Category",
     title="Survey Results: Favorite PGA Tour Golfer"
-    
+)   
 st.plotly_chart(pie)
 
 st.header("Average Rounds per Month by Favorite Golfer")
