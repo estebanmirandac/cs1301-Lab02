@@ -1,0 +1,75 @@
+{
+    "chart_title": "2026 PGA Tour Driving Stats",
+    "data_points": [
+        {
+            "golfer": "Scottie Scheffler",
+            "driving_distance": 312.7,
+            "driving_accuracy": 63.94,
+            "wins": 3,
+            "events_played": 20
+        },
+        {
+            "golfer": "Matt Fitzpatrick",
+            "driving_distance": 306.3,
+            "driving_accuracy": 66.42,
+            "wins": 3,
+            "events_played": 21
+        },
+        {
+            "golfer": "Wyndham Clark",
+            "driving_distance": 312.8,
+            "driving_accuracy": 58.13,
+            "wins": 3,
+            "events_played": 24
+        },
+        {
+            "golfer": "Chris Gotterup",
+            "driving_distance": 322.9,
+            "driving_accuracy": 54.49,
+            "wins": 3,
+            "events_played": 23
+        },
+        {
+            "golfer": "Cameron Young",
+            "driving_distance": 318.3,
+            "driving_accuracy": 61.07,
+            "wins": 2,
+            "events_played": 20
+        },
+        {
+            "golfer": "Rory McIlroy",
+            "driving_distance": 330.3,
+            "driving_accuracy": 54.65,
+            "wins": 1,
+            "events_played": 14
+        },
+        {
+            "golfer": "Michael Brennan",
+            "driving_distance": 327.0,
+            "driving_accuracy": 61.73,
+            "wins": 1,
+            "events_played": 27
+        },
+        {
+            "golfer": "Aldrich Potgieter",
+            "driving_distance": 330.7,
+            "driving_accuracy": 53.01,
+            "wins": 0,
+            "events_played": 23
+        },
+        {
+            "golfer": "Collin Morikawa",
+            "driving_distance": 306.0,
+            "driving_accuracy": 68.53,
+            "wins": 1,
+            "events_played": 18
+        },
+        {
+            "golfer": "Xander Schauffele",
+            "driving_distance": 319.3,
+            "driving_accuracy": 61.81,
+            "wins": 0,
+            "events_played": 21
+        }
+    ]
+}
